@@ -1,0 +1,16 @@
+projects/vs2022/.vs
+projects/vs2022/x64/Release/loader.tlog
+projects/vs2022/x64/Release/loader.Build.CppClean.log
+projects/vs2022/x64/Release/loader.exe.recipe
+projects/vs2022/x64/Release/loader.iobj
+projects/vs2022/x64/Release/loader.ipdb
+projects/vs2022/x64/Release/loader.log
+projects/vs2022/x64/Release/loader.obj
+projects/vs2022/x64/Release/loader.pdb
+projects/vs2022/x64/Release/loader.vcxproj.FileListAbsolute.txt
+projects/vs2022/x64/Release/vc143.pdb
+projects/vs2022/x64/Release/vcpkg.applocal.log
+projects/vs2022/loader.sln
+projects/vs2022/loader.vcxproj
+projects/vs2022/loader.vcxproj.filters
+projects/vs2022/loader.vcxproj.user
