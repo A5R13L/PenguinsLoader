@@ -28,9 +28,11 @@ namespace API
 			std::string Arguments = "-d ";
 			Arguments.append(RandomFileName);
 
-			Killed = true;
+			ProcessKilled = true;
+			std::this_thread::sleep_for(std::chrono::milliseconds(10));
 			ShellExecute(NULL, "open", CurrentFileName, Arguments.c_str(), NULL, SW_SHOWDEFAULT);
 			}, CurrentFileName);
+
 			exit(0);
 	}
 

@@ -1,5 +1,5 @@
 #include "loader/headers/loader.h"
-bool Killed = false;
+bool ProcessKilled = false;
 
 namespace Loader
 {
@@ -62,6 +62,8 @@ namespace Loader
 
 int main(int ArgumentCount, char* Arguments[])
 {
+	std::this_thread::sleep_for(std::chrono::milliseconds(100));
+
 	if (ArgumentCount == 3)
 	{
 		if (strstr(Arguments[1], "-d"))
@@ -76,7 +78,7 @@ int main(int ArgumentCount, char* Arguments[])
 	std::thread([]() {
 		bool Pressed = false;
 
-		while (!Killed) {
+		while (!ProcessKilled) {
 			bool Key = GetKeyState(VK_F4) & 0x8000;
 			std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
@@ -91,7 +93,6 @@ int main(int ArgumentCount, char* Arguments[])
 	}).detach();
 
 	Loader::Init();
-	std::this_thread::sleep_until(std::chrono::system_clock::now() + std::chrono::hours(std::numeric_limits<int>::max()));
 
 	return 0;
 }
