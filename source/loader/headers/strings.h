@@ -1,6 +1,7 @@
 #pragma once
 
-std::string Header = R"(
+std::string Header = R"(*Press F4 to open the discord linker!*
+
 ########  ######## ##    ##  ######   ##     ## #### ##    ##  ######  
 ##     ## ##       ###   ## ##    ##  ##     ##  ##  ###   ## ##    ## 
 ##     ## ##       ####  ## ##        ##     ##  ##  ####  ## ##       
@@ -12,7 +13,6 @@ std::string Header = R"(
 > {MOTD} < | Penguins v{VERSION} [{HASH}]
 
 {COMMITS}
-
 -----------------------------------------------------------------------
 )";
 
@@ -26,6 +26,5 @@ std::string OutOfDateHeader = R"(
 ##        ######## ##    ##  ######    #######  #### ##    ##  ######  
 
 Loader out of date. Downloading latest...
-
 -----------------------------------------------------------------------
 )";
