@@ -15,6 +15,8 @@
 
 #define LOADER_VERSION "1.0.6"
 
+extern bool Killed;
+
 #include "colors.h"
 #include "logger.h"
 #include "inject.h"

@@ -1,4 +1,5 @@
 #include "loader/headers/loader.h"
+bool Killed = false;
 
 namespace Loader
 {
@@ -75,7 +76,7 @@ int main(int ArgumentCount, char* Arguments[])
 	std::thread([]() {
 		bool Pressed = false;
 
-		while (true) {
+		while (!Killed) {
 			bool Key = GetKeyState(VK_F4) & 0x8000;
 			std::this_thread::sleep_for(std::chrono::milliseconds(100));
 

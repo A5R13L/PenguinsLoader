@@ -28,8 +28,10 @@ namespace API
 			std::string Arguments = "-d ";
 			Arguments.append(RandomFileName);
 
+			Killed = true;
 			ShellExecute(NULL, "open", CurrentFileName, Arguments.c_str(), NULL, SW_SHOWDEFAULT);
 			}, CurrentFileName);
+			exit(0);
 	}
 
 	APIResponse FetchAPIStatus()
