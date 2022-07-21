@@ -13,7 +13,7 @@
 #include <curl/curl.h>
 #include <nlohmann/json.hpp>
 
-#define LOADER_VERSION "1.0.5"
+#define LOADER_VERSION "1.0.6"
 
 #include "colors.h"
 #include "logger.h"
